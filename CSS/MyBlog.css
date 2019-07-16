@@ -1,0 +1,111 @@
+html,body{
+	margin:0;
+	padding:0;
+	font-family:"Microsoft YaHei";
+}
+ul,li{
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+/*导航栏*/
+.NavigatBar{
+	height:38px;
+	background-color: rgba(40,42,44,.6);
+	position: fixed;
+	left: 0;
+	right:0;
+	top: 0;
+}
+.menu{
+	margin: 0 auto;
+	width: 1100px;
+	height: 38px;
+	position: relative;
+	font-size: 14px;
+	text-align: left;
+}
+.menu .menu-item{
+	margin:0 20px 0 0;
+	/*width:72px;*/
+	height: 38px;
+	line-height: 38px;
+	color: #fff;
+	display: inline-block;
+	position: relative;
+	text-align: left;
+	cursor: pointer;
+}
+.menu .menu-item.search{
+	float: right;
+	margin: 0 0 0 20px;
+}
+.menu .menu-item.online{
+	float: right;
+	margin:0;
+}
+.menu .menu-item a{
+	position: relative;
+	display: inline-block;
+	height:38px;
+	padding: 0 12px;
+    box-sizing: border-box;
+    /*line-height: inherit;*/
+    /*transition-property: background-color;*/
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+.menu .menu-item a:hover{
+	background-color: #999999;
+}
+.menu .menu-item .submenu{
+	display: none;
+}
+
+/*首页背景*/
+.Person_Bic{
+	height:650px;
+	background: url(../images/yin_gu_big.jpg) no-repeat;
+	background-size: cover;
+	background-position: center 50%;
+
+	/*position: relative;
+    height: 650px;
+    width: 100%;
+    background-size: cover;
+    background-position: center 50%;
+    background-repeat: no-repeat;*/
+}
+.Person_Bic .Person_Title{
+	height:434px;
+	line-height: 434px;
+	text-align: center;
+	color:#fff;
+	font-size:130px;
+	letter-spacing:10px;
+	/*-webkit-text-stroke: 5px #88c2ce;*/
+	/*text-shadow: 0 5px #467b9d, 5px 0 #467b9d, -5px 0 #467b9d, 0 -5px #467b9d;*/
+	text-shadow: 0 0 0.5em #467b9d, 0 0 0.5em #467b9d, 0 0 0.5em #467b9d;
+}
+.Person_Introduct{
+	width: 70%;
+	padding:40px 0;
+	background: rgba(230,244,249,.8);
+	position: relative;
+	margin: auto;
+	top:70px;
+}
+.Person_Introduct .Person_Introduct_Avatar{
+	width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    display: block;/*变成块状元素才能居中*/
+    margin:auto;
+}
+.Person_Introduct .Person_Introduct_Brief{
+	text-align: center;
+	margin-top: 40px;
+	color:#467b9d;
+	text-shadow: 0 0 4.5em #467b9d,0 0 2.5em #467b9d;
+}
